@@ -109,7 +109,7 @@ Code example, specific writing can refer to unit test:
 
 When the unit test is implemented with java, the java environment needs to be installed.
 
-The unit test generation certificate relies on the algorithm dynamic library, please go to [libconfidentialtx](https://github.com/PlatONnetwork/libconfidentialtx/tree/java) to obtain the dynamic library of the corresponding platform, and set the dynamic library search environment variable.
+The unit test generation certificate depends on the algorithm dynamic library, please go to [libconfidentialtx](https://github.com/PlatONnetwork/libconfidentialtx/tree/java) to obtain the dynamic library of the corresponding platform, and set the environment variable `CONFIDENTIALTX_LIBRARY` to the path of the dynamic library .
 
 In the unit test part, the default is to install the underlying chain of docker image for unit testing. It also supports configuring your own environment. You need to change the `Web.selfTestNode = true;`, and configure the `conf.yml` file of the underlying chain.
 

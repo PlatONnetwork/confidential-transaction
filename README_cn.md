@@ -108,7 +108,7 @@ confidential transaction 是基于 Alaya 的 WASM 智能合约平台 PIP-13 提�
 
 单元测试时用 java 实现的，需要安装 java 环境。
 
-单元测试生成证明依赖算法动态库，请到 [libconfidentialtx](https://github.com/PlatONnetwork/libconfidentialtx/tree/java) 获取相应平台的动态库，并设置动态库搜索环境变量。
+单元测试生成证明依赖算法动态库，请到 [libconfidentialtx](https://github.com/PlatONnetwork/libconfidentialtx/tree/java) 获取相应平台的动态库，并设置环境变量 `CONFIDENTIALTX_LIBRARY` 为动态库的路径。
 
 单元测试部分默认是 docker 镜像安装底层链进行单元测试，也支持配置自己的环境， 需要更改 `Web.selfTestNode = true;`, 并配置底层链的 `conf.yml` 文件。
 
