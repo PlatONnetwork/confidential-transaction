@@ -1,8 +1,8 @@
 [中文](./README_cn.md)
 
-# confidential token
+# confidential transaction
 
-Confidential token is a privacy token project based on Alaya's WASM smart contract platform PIP-13 proposal. The project is intended to address the increasing demand for anonymization of transactions. The zero-knowledge proof algorithm is used to achieve hidden identity, and the algorithm is plug-in to meet the needs of multiple privacy; it supports the independent issuance of privacy tokens and the privacy of ARC20 assets; the plug-in mechanism is used to achieve online upgrades of the algorithm to ensure that users No sense of upgrade.
+confidential transaction is a privacy token project based on Alaya's WASM smart contract platform PIP-13 proposal. The project is intended to address the increasing demand for anonymization of transactions. The zero-knowledge proof algorithm is used to achieve hidden identity, and the algorithm is plug-in to meet the needs of multiple privacy; it supports the independent issuance of privacy tokens and the privacy of ARC20 assets; the plug-in mechanism is used to achieve online upgrades of the algorithm to ensure that users No sense of upgrade.
 
 ## Compile
 
