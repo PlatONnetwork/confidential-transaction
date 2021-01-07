@@ -111,4 +111,4 @@ In the unit test part, the default is to install the underlying chain of docker 
 
 ## License
 
-GNU General Public License v3.0, see [LICENSE](https://github.com/PlatONnetwork/PlatON-CDT/blob/master/LICENSE).
+GNU General Public License v3.0, see [LICENSE](https://github.com/PlatONnetwork/confidential-transaction/blob/master/LICENSE).

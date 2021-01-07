@@ -110,4 +110,4 @@ confidential token 是基于 Alaya 的 WASM 智能合约平台 PIP-13 提案构�
 
 ## License
 
-GNU General Public License v3.0, see [LICENSE](https://github.com/PlatONnetwork/PlatON-CDT/blob/master/LICENSE).
+GNU General Public License v3.0, see [LICENSE](https://github.com/PlatONnetwork/confidential-transaction/blob/master/LICENSE).
