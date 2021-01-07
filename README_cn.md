@@ -5,9 +5,11 @@ confidential transaction 是基于 Alaya 的 WASM 智能合约平台 PIP-13 提�
 
 ## 编译
 
-安装 WASM 智能合约平台开发套件 `PlatON-CDT`, 参考 [PlatON-CDT README](https://github.com/PlatONnetwork/PlatON-CDT/blob/feature/wasm/README_cn.md)。
+目前隐私交易是发布在 Alaya 网络上的， 需要安装 Alaya 分支的 WASM 智能合约平台开发套件 `PlatON-CDT`。
 
-执行 `./contracts/build.sh`，会将每个合约编译好的 wam 文件 和 abi 文件 放置到 build 目录下。
+需要执行 `git checkout alaya`, 其他的参考 [PlatON-CDT README](https://github.com/PlatONnetwork/PlatON-CDT/blob/feature/wasm/README_cn.md)。
+
+安装成功之后，执行 `./contracts/build.sh`，会将每个合约编译好的 wam 文件 和 abi 文件放置到 build 目录下。
 
 ## 合约部署流程
 
@@ -105,6 +107,8 @@ confidential transaction 是基于 Alaya 的 WASM 智能合约平台 PIP-13 提�
 ## 单元测试
 
 单元测试时用 java 实现的，需要安装 java 环境。
+
+单元测试生成证明依赖算法动态库，请到 [libconfidentialtx](https://github.com/PlatONnetwork/libconfidentialtx/tree/java) 获取相应平台的动态库，并设置动态库搜索环境变量。
 
 单元测试部分默认是 docker 镜像安装底层链进行单元测试，也支持配置自己的环境， 需要更改 `Web.selfTestNode = true;`, 并配置底层链的 `conf.yml` 文件。
 

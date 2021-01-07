@@ -6,9 +6,11 @@ confidential transaction is a privacy token project based on Alaya's WASM smart 
 
 ## Compile
 
-Install the WASM smart contract platform development kit `PlatON-CDT`, refer to [PlatON-CDT README](https://github.com/PlatONnetwork/PlatON-CDT/blob/feature/wasm/README_cn.md).
+Currently, private transactions are published on the Alaya network, and the WASM smart contract platform development kit `PlatON-CDT` of the Alaya branch needs to be installed.
 
-Executing `./contracts/build.sh` will place the compiled wam files and abi files of each contract in the build directory.
+Need to execute `git checkout alaya`, other reference [PlatON-CDT README](https://github.com/PlatONnetwork/PlatON-CDT/blob/feature/wasm/README_cn.md).
+
+After the installation is successful, execute `./contracts/build.sh`, and the compiled wam files and abi files of each contract will be placed in the build directory.
 
 ## Contract deployment process
 
@@ -106,6 +108,8 @@ Code example, specific writing can refer to unit test:
 ## unit test
 
 When the unit test is implemented with java, the java environment needs to be installed.
+
+The unit test generation certificate relies on the algorithm dynamic library, please go to [libconfidentialtx](https://github.com/PlatONnetwork/libconfidentialtx/tree/java) to obtain the dynamic library of the corresponding platform, and set the dynamic library search environment variable.
 
 In the unit test part, the default is to install the underlying chain of docker image for unit testing. It also supports configuring your own environment. You need to change the `Web.selfTestNode = true;`, and configure the `conf.yml` file of the underlying chain.
 
