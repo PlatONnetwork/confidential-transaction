@@ -17,7 +17,7 @@ public class Web {
     public static final GenericContainer singleNode =
             new GenericContainer(
                             DockerImageName.parse(
-                                    "registry.cn-hangzhou.aliyuncs.com/pressure/docker:single-platon"))
+                                    "registry-intl.ap-southeast-1.aliyuncs.com/alaya-test/alaya-test-node:single-alaya-confidential-test"))
                     .withExposedPorts(6601);
     public static boolean selfTestNode = false;
     public static String confFileName = "conf.yml";
