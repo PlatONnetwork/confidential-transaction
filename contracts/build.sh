@@ -3,8 +3,10 @@
 # If you want to support the automatic generation of the java packaging class of the contract, please set the environment variable WEB3J in the current execution environment
 # For example: export WEB3J=${WEB3JPATH}/platon-web3j
 
-exist_optimizer=$(whereis wasm-opt | xargs | awk -F ":" '{print $2}')
-exist_compiler=$(whereis platon-cpp | xargs | awk -F ":" '{print $2}')
+cd $( dirname "${BASH_SOURCE[0]}" ) # contracts dir
+
+exist_optimizer=$(which wasm-opt)
+exist_compiler=$(which platon-cpp)
 
 if [ "${exist_optimizer}" == "" ] || [ "${exist_compiler}" == "" ]; then
 	echo "compiler or optimizer is not exist"
