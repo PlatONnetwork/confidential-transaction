@@ -106,7 +106,7 @@ confidential transaction 是基于 Alaya 的 WASM 智能合约平台 PIP-13 提�
 
 ## 单元测试
 
-单元测试时用 java 实现的，需要安装 java 环境。
+单元测试是用 java 实现的，需要安装 java 环境。
 
 单元测试生成证明依赖算法动态库，请到 [libconfidentialtx](https://github.com/PlatONnetwork/libconfidentialtx/tree/java) 获取相应平台的动态库，并设置环境变量 `CONFIDENTIALTX_LIBRARY` 为动态库的路径。
 
